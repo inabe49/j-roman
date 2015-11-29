@@ -8,7 +8,8 @@
         "inlineSources": true
     },
     "filesGlob": [
-        "./**/*.ts",
+        "./src/**/*.ts",
+        "!./src/**/*.d.ts",
         "!./**/*.d.ts",
         "!./node_modules/**/*.ts",
         "!./typings/**/*.ts",
@@ -20,7 +21,8 @@
         "convertTabsToSpaces": true
     },
     "files": [
-        "./index.ts"
+        "./src/roman.ts",
+        "./src/table.ts"
     ],
     "compileOnSave": true,
     "buildOnSave": true,
