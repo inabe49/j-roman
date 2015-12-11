@@ -10,10 +10,10 @@
     "filesGlob": [
         "./src/**/*.ts",
         "!./src/**/*.d.ts",
-        "!./**/*.d.ts",
+        "./test/**/*.ts",
+        "!./test/**/*.d.ts",
         "!./node_modules/**/*.ts",
-        "!./typings/**/*.ts",
-        "./test/**/*.ts"
+        "!./typings/**/*.ts"
     ],
     "formatCodeOptions": {
         "indentSize": 4,
@@ -22,7 +22,8 @@
     },
     "files": [
         "./src/roman.ts",
-        "./src/table.ts"
+        "./src/table.ts",
+        "./test/convert-test.ts",
     ],
     "compileOnSave": true,
     "buildOnSave": true,
