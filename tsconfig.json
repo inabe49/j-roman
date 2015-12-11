@@ -23,7 +23,7 @@
     "files": [
         "./src/roman.ts",
         "./src/table.ts",
-        "./test/convert-test.ts",
+        "./test/convert-test.ts"
     ],
     "compileOnSave": true,
     "buildOnSave": true,
