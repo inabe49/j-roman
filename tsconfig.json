@@ -23,7 +23,6 @@
     },
     "files": [
         "./index.ts",
-        "./src/roman.ts",
         "./src/table.ts",
         "./test/convert-test.ts"
     ],

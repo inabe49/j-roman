@@ -2,7 +2,7 @@
 /// <reference path="../typings/mocha/mocha.d.ts" />
 
 import assert from "power-assert";
-import {toKana, toRomans} from "../src/roman";
+import {toKana, toRomans} from "../index";
 
 
 function convertTest(roman: string, kana: string) {
