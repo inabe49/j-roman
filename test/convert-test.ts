@@ -6,7 +6,7 @@ import {toKana, toRomans} from "../src/roman";
 
 
 function convertTest(roman: string, kana: string) {
-    assert.equal(kana, toKana(roman));
+    assert.equal(toKana(roman), kana);
 }
 
 

@@ -1,4 +1,4 @@
-import {getKana} from "./table";
+import { getKana, isKanaInit } from "./table";
 
 
 export function toKana(str: string): string {
@@ -7,14 +7,18 @@ export function toKana(str: string): string {
     const len = str.length;
 
     for (let i = 0; i < len; i++) {
-        const c = str[i];
-
-        temp += c;
+        // 3文字までバッファー
+        temp = temp + str[i];
 
         const k = getKana(temp);
-
         if (k) {
-            result += k;
+            result = result + k.kana;
+            temp = k.next;
+        } else {
+            if (!isKanaInit(temp)) {
+                result = result + temp.charAt(0);
+                temp = temp.substring(1);
+            }
         }
     }
 

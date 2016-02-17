@@ -8,6 +8,7 @@
         "inlineSources": true
     },
     "filesGlob": [
+        "./index.ts",
         "./src/**/*.ts",
         "!./src/**/*.d.ts",
         "./test/**/*.ts",
@@ -21,6 +22,7 @@
         "convertTabsToSpaces": true
     },
     "files": [
+        "./index.ts",
         "./src/roman.ts",
         "./src/table.ts",
         "./test/convert-test.ts"
