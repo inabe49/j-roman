@@ -1,32 +1,36 @@
 {
-  "name": "j-roman",
-  "version": "0.0.2",
-  "description": "japanese to roman",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --compilers ts:espower-typescript/guess test/*.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inabe49/j-roman.git"
-  },
-  "keywords": [
-    "japanese"
-  ],
-  "author": "inabe49",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/inabe49/j-roman/issues"
-  },
-  "homepage": "https://github.com/inabe49/j-roman#readme",
-  "files": [
-    "src/*.js",
-    "src/*.d.ts",
-    "src/*.js.map"
-  ],
-  "devDependencies": {
-    "espower-typescript": "^3.0.0",
-    "mocha": "^2.3.4",
-    "power-assert": "^1.2.0"
-  }
+    "name": "j-roman",
+    "version": "0.0.9",
+    "description": "japanese to roman",
+    "main": "index.js",
+    "scripts": {
+        "test": "tsc && mocha --compilers ts:espower-typescript/guess test/*.ts",
+        "prepublish": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/inabe49/j-roman.git"
+    },
+    "keywords": [
+        "japanese"
+    ],
+    "author": "inabe49",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/inabe49/j-roman/issues"
+    },
+    "homepage": "https://github.com/inabe49/j-roman#readme",
+    "files": [
+        "index.js",
+        "index.d.ts",
+        "index.js.map",
+        "src/*.js",
+        "src/*.d.ts",
+        "src/*.js.map"
+    ],
+    "devDependencies": {
+        "espower-typescript": "^3.0.0",
+        "mocha": "^2.3.4",
+        "power-assert": "^1.2.0"
+    }
 }
